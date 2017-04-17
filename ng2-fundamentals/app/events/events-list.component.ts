@@ -17,16 +17,18 @@ import {ToastrService} from "../common/toastr.service";
     </div>
     `
 })
-export class EventsListComponent implements  OnInit{
+export class EventsListComponent implements OnInit {
     events:any[];
 
-    constructor(private eventService:EventService,private toastr:ToastrService) {
+    constructor(private eventService:EventService, private toastr:ToastrService) {
 
     }
-    ngOnInit(){
+
+    ngOnInit() {
         this.events = this.eventService.getEvents()
     }
-    handleThumbnailClick(eventName){
+
+    handleThumbnailClick(eventName) {
         this.toastr.success(eventName);
     }
 }

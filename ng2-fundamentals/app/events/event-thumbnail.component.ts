@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core'
+import {Component, Input, Output, EventEmitter} from '@angular/core'
 import is = require("core-js/fn/object/is");
 
 @Component({
@@ -22,7 +22,7 @@ import is = require("core-js/fn/object/is");
         Online URL : {{event?.onlineUrl}}
         </div>
     </div>`,
-    styles:[`.pad-left {margin-left: 10px;}
+    styles: [`.pad-left {margin-left: 10px;}
             .thumbnail {min-height: 210px;}
             .green {color: #003300 !important;}
             .bold {font-weight: bold;}
@@ -31,9 +31,10 @@ import is = require("core-js/fn/object/is");
 
 export class EventThumbnailComponent {
     @Input() event:any;
-    getStartTimeClass(){
-       if(this.event && this.event.time === '8:00 am')
-           return ['green,bold'];
+
+    getStartTimeClass() {
+        if (this.event && this.event.time === '8:00 am')
+            return ['green,bold'];
         return []
 
     }
