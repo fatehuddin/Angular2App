@@ -1,7 +1,7 @@
 import {Component, OnInit, Output, EventEmitter} from '@angular/core'
 import {FormControl, FormGroup, Validators} from '@angular/forms'
 import {ISession, restrictedWords} from '../shared/index'
-import EventEmitter = NodeJS.EventEmitter;
+
 @Component({
     selector: 'create-session',
     templateUrl: 'app/events/event-details/create-session.component.html',
@@ -23,7 +23,6 @@ export class CreateSessionComponent implements OnInit {
     presenter:FormControl
     duration:FormControl
     level:FormControl
-    duration:FormControl
     abstract:FormControl
 
     ngOnInit() {

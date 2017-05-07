@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1af46bc4-df7c-438b-9490-1834b275ce4a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create-session.component.html" afterPath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create-session.component.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create.session.component.ts" afterPath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create.session.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/event-details.component.html" afterPath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/event-details.component.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/event-details.component.ts" afterPath="$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/event-details.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ng2-fundamentals/app/events/shared/events.service.ts" afterPath="$PROJECT_DIR$/ng2-fundamentals/app/events/shared/events.service.ts" />
     </list>
     <ignored path="Angular2App.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -94,8 +91,8 @@
       <file leaf-file-name="create-session.component.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create-session.component.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="240">
+              <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -124,8 +121,8 @@
       <file leaf-file-name="create.session.component.ts" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create.session.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
               <folding>
                 <element signature="e#0#69#0" expanded="true" />
               </folding>
@@ -414,18 +411,18 @@
       <updated>1492397283581</updated>
       <workItem from="1492397285001" duration="7087000" />
       <workItem from="1494045898522" duration="8000" />
-      <workItem from="1494046186731" duration="32236000" />
+      <workItem from="1494046186731" duration="32397000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39331000" />
+    <option name="totallyTimeSpent" value="39492000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1460" y="23" width="976" height="1057" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20104712" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20104712" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -876,10 +873,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/event-details.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create-session.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="44" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="240">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -894,20 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/event-details.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ng2-fundamentals/app/events/event-details/create.session.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        <state relative-caret-position="345">
+          <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
           <folding>
             <element signature="e#0#69#0" expanded="true" />
           </folding>
