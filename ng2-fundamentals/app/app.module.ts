@@ -20,7 +20,7 @@ import  {
     EventService,
     EventDetailsComponent,
     CreateEventComponent,
-    EventRouteActivator,
+    EventResolver,
     EventListResolver,
     CreateSessionComponent,
     SessionListComponent,
@@ -40,46 +40,46 @@ declare let toastr:Toastr
 declare let jQuery: Object
 
 @NgModule({
-    imports: [BrowserModule,
-        FormsModule,
-        HttpModule,
-        ReactiveFormsModule,
-        RouterModule.forRoot(appRoutes)
-    ],
-    declarations: [
-        EventsAppComponent,
-        EventsListComponent,
-        EventThumbnailComponent,
-        EventDetailsComponent,
-        navBarComponent,
-        CreateEventComponent,
-        Error404Component,
-        CreateSessionComponent,
-        SessionListComponent,
-        CollapsibleWellComponent,
-        DurationPipe,
-        SimpleModalComponent,
-        UpvoteComponent,
-        ModalTriggerDirective
-    ],
-    providers: [EventService,
-        {provide: TOASTR_TOKEN, useValue: toastr},
-        {provide: JQ_TOKEN, useValue: jQuery},
-        EventRouteActivator,
-        EventListResolver,
-        VoterService,
-        AuthService,
-        {provide: 'canDeactivateCreateEvent', useValue: checkDirtyState}],
-    bootstrap: [EventsAppComponent]
+  imports: [BrowserModule,
+    FormsModule,
+    HttpModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot(appRoutes)
+  ],
+  declarations: [
+    EventsAppComponent,
+    EventsListComponent,
+    EventThumbnailComponent,
+    EventDetailsComponent,
+    navBarComponent,
+    CreateEventComponent,
+    Error404Component,
+    CreateSessionComponent,
+    SessionListComponent,
+    CollapsibleWellComponent,
+    DurationPipe,
+    SimpleModalComponent,
+    UpvoteComponent,
+    ModalTriggerDirective
+  ],
+  providers: [EventService,
+    {provide: TOASTR_TOKEN, useValue: toastr},
+    {provide: JQ_TOKEN, useValue: jQuery},
+    EventResolver,
+    EventListResolver,
+    VoterService,
+    AuthService,
+    {provide: 'canDeactivateCreateEvent', useValue: checkDirtyState}],
+  bootstrap: [EventsAppComponent]
 })
 export class AppModule {
 }
 
 function checkDirtyState(component:CreateEventComponent) {
-    if (component.isDirty) {
-        return window.confirm('you have not saved this event,do you really want to cancel?')
-    } else {
-        return true;
-    }
+  if (component.isDirty) {
+    return window.confirm('you have not saved this event,do you really want to cancel?')
+  } else {
+    return true;
+  }
 
 }
