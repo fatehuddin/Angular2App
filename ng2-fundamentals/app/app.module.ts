@@ -1,6 +1,8 @@
 import {NgModule} from '@angular/core'
 import {BrowserModule} from '@angular/platform-browser'
 import {RouterModule} from '@angular/router'
+import { HttpModule } from '@angular/http'
+
 import {FormsModule, ReactiveFormsModule} from '@angular/forms'
 import {JQ_TOKEN,
     TOASTR_TOKEN,
@@ -22,6 +24,8 @@ import  {
     EventListResolver,
     CreateSessionComponent,
     SessionListComponent,
+    UpvoteComponent,
+    VoterService,
     DurationPipe
 
 } from './events/index'
@@ -38,6 +42,7 @@ declare let jQuery: Object
 @NgModule({
     imports: [BrowserModule,
         FormsModule,
+        HttpModule,
         ReactiveFormsModule,
         RouterModule.forRoot(appRoutes)
     ],
@@ -54,6 +59,7 @@ declare let jQuery: Object
         CollapsibleWellComponent,
         DurationPipe,
         SimpleModalComponent,
+        UpvoteComponent,
         ModalTriggerDirective
     ],
     providers: [EventService,
@@ -61,6 +67,7 @@ declare let jQuery: Object
         {provide: JQ_TOKEN, useValue: jQuery},
         EventRouteActivator,
         EventListResolver,
+        VoterService,
         AuthService,
         {provide: 'canDeactivateCreateEvent', useValue: checkDirtyState}],
     bootstrap: [EventsAppComponent]
